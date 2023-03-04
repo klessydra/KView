@@ -473,10 +473,10 @@ class App(customtkinter.CTk):
         self.pulpino_core_optionmenu = customtkinter.CTkOptionMenu(self.tabview.tab("PULPino"), dynamic_resizing=False, command=toggle_core_selection,
                                                         values=["RI5CY", "ZERO-RISCY"])
         self.pulpino_rvc_switch = customtkinter.CTkSwitch(self.tabview.tab("PULPino"), text="RVC")
-        self.Zeroriscy_frame = customtkinter.CTkScrollableFrame(self.tabview.tab("PULPino"), label_text="Zeroriscy Features", width="100")
+        self.Zeroriscy_frame = customtkinter.CTkScrollableFrame(self.tabview.tab("PULPino"), label_text="Zeroriscy Features", width=100)
         self.zero_rv32e_switch = customtkinter.CTkSwitch(self.Zeroriscy_frame, text="RV32E")
         self.zero_rv32m_switch = customtkinter.CTkSwitch(self.Zeroriscy_frame, text="RV32M")
-        self.ri5cy_frame = customtkinter.CTkScrollableFrame(self.tabview.tab("PULPino"), label_text="RI5CY Features", width="100")
+        self.ri5cy_frame = customtkinter.CTkScrollableFrame(self.tabview.tab("PULPino"), label_text="RI5CY Features", width=100)
         self.ri5cy_rv32f_switch = customtkinter.CTkSwitch(self.ri5cy_frame, text="RV32F")
 
 
