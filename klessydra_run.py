@@ -405,6 +405,7 @@ class App(customtkinter.CTk):
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame, values=["80%", "90%", "100%", "110%", "120%"],
                                                                command=self.change_scaling_event)
         self.scaling_optionemenu.grid(row=10, column=0, padx=20, pady=(10, 20))
+        self.scaling_optionemenu.set("100%")
 
         # create main entry and button
         self.command_line = customtkinter.CTkEntry(self, placeholder_text="e.g. make helloworld")
@@ -651,7 +652,6 @@ class App(customtkinter.CTk):
         #    klessydra_logo_button(fg_color="#343638", hover_color="#343638")
 
     def change_scaling_event(self, new_scaling: str):
-        new_scaling_float = int(new_scaling.replace("%", "")) / 100
         if (self.scaling_optionemenu.get() == "120%"):
                 self.geometry(f"{1380}x{775}")
         elif (self.scaling_optionemenu.get() == "110%"):
@@ -662,7 +662,7 @@ class App(customtkinter.CTk):
                 self.geometry(f"{1080}x{625}")
         elif (self.scaling_optionemenu.get() == "80%"):
                 self.geometry(f"{980}x{575}")
-
+        new_scaling_float = int(new_scaling.replace("%", "")) / 100
         customtkinter.set_widget_scaling(new_scaling_float)
 
 
