@@ -50,7 +50,7 @@ class App(customtkinter.CTk):
         super().__init__()
 
         # configure window
-        self.title("Klessydra Run")
+        self.title("KView")
         self.geometry(f"{1180}x{675}")
 
         # Block the resizing of the window
