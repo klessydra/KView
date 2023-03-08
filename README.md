@@ -1,4 +1,4 @@
-<img src="/pics/Klessydra_Logo.png" width="400">
+<img src="/assets/Klessydra_Logo.png" width="400">
 
 # KView
 
